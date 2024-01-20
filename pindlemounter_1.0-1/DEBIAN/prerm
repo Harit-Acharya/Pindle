@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm -dr /etc/Pindle/GDrive/
+rm -dr /etc/Pindle/OneDrive/
+rm -dr /etc/Pindle/Mounter/
+rm -f /usr/bin/gdrive.py
+rm -f /usr/bin/onedrive.py
+rm -f /usr/bin/mounter
+rm -f /etc/systemd/system/gdrive.service 
+rm -f /etc/systemd/system/onedrive.service
+rm -dr /var/log/Pindle/OneDrive/
+rm -dr /var/log/Pindle/GDrive/
+systemctl stop onedrive
+systemctl stop gdrive
+systemctl daemon-reload
+

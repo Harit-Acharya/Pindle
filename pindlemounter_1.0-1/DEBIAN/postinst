@@ -1,0 +1,31 @@
+#!/bin/bash
+# This `DEBIAN/postinst` script is run post-installation
+
+apt-get install google-requests-oauthlib
+apt-get install google-auth-oauthlib
+apt-get install google-apiclient
+apt-get install pyside2-tools
+
+red=$'\e[1;31m'
+grn=$'\e[1;32m'
+blu=$'\e[1;34m'
+mag=$'\e[1;35m'
+cyn=$'\e[1;36m'
+white=$'\e[0m'
+
+systemctl enable gdrive
+systemctl enable onedrive
+
+sudo chmod -R 777 /etc/Pindle/GDrive
+sudo chmod -R 777 /etc/Pindle/OneDrive
+sudo chmod -R 777 /etc/Pindle/Mounter
+sudo chmod -R 777 /var/log/Pindle/GDrive
+sudo chmod -R 777 /var/log/Pindle/OneDrive
+sudo chmod -R 777 /usr/bin/mounter
+
+echo "$white You can start application by typing $mag'mounter'$white command in terminal"
+echo "To disable this service on boot time type following command:"
+echo "$grn							systemctl disable gdrive							"
+echo "$grn							systemctl disable onedrive							"
+
+echo "$red PINDLE $grn MOUNTER $cyn INSTALLED $blu SUCCESSFULLY, $mag REBOOT SYSTEM :) $white "

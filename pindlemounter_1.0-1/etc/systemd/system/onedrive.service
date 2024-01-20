@@ -1,0 +1,15 @@
+
+[Unit]
+Description=OneDrive File System
+Wants=network-online.target
+After=network-online.target
+BindsTo=network-online.target
+
+[Service]
+RemainAfterExit=yes
+ExecStart=/etc/Pindle/OneDrive/onedrivefs.sh start
+ExecStop=/etc/Pindle/OneDrive/uonedrivefs.sh stop
+ExecReload=/etc/Pindle/OneDrive/onedrivefs.sh start
+
+[Install]
+WantedBy=multi-user.target

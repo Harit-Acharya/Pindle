@@ -1,0 +1,35 @@
+#!/bin/bash
+# This `DEBIAN/postinst` script is run pre-installation
+
+red=$'\e[1;31m'
+grn=$'\e[1;32m'
+blu=$'\e[1;34m'
+mag=$'\e[1;35m'
+cyn=$'\e[1;36m'
+white=$'\e[0m'
+yel=$'\e[1;93m'
+
+echo "                                                                                                                         ";
+echo "                                                                                                                         ";
+echo "  $red PPPPPPPPPPPPPPPPP     IIIIIIIIII  NNNNNNNN        NNNNNNNN                 D                LLLLLLLLLLL               EEEEEEEEEEEEEEEEEEEEEE";
+echo "  $red P::::::::::::::::P    I::::::::I  N:::::::N       N::::::N                D:D               L:::::::::L               E::::::::::::::::::::E";
+echo "  $red P::::::PPPPPP:::::P   I::::::::I  N::::::::N      N::::::N               D:::D              L:::::::::L               E::::::::::::::::::::E";
+echo "  $red PP:::::P     P:::::P  II::::::II  N:::::::::N     N::::::N              D:::::D             LL:::::::LL               EEEEEEEEEEEEEEEEEEEEEE";
+echo "  $yel   P::::P     P:::::P    I::::I    N::::::::::N    N::::::N             D:::::::D              L:::::L                                       ";
+echo "  $yel   P::::P     P:::::P    I::::I    N:::::::::::N   N::::::N            D:::::::::D             L:::::L                                       ";
+echo "  $yel   P::::PPPPPP:::::P     I::::I    N:::::::N::::N  N::::::N           D:::::::::::D            L:::::L                 EEEEEEEEEEEEEEEEEEEEEE";
+echo "  $grn   P:::::::::::::PP      I::::I    N::::::N N::::N N::::::N          D::::::D::::::D           L:::::L                 E::::::::::::::::::::E";
+echo "  $grn   P::::PPPPPPPPP        I::::I    N::::::N  N::::N:::::::N         D::::::D D::::::D          L:::::L                 E::::::::::::::::::::E";
+echo "  $grn   P::::P                I::::I    N::::::N   N:::::::::::N        D::::::D   D::::::D         L:::::L                 EEEEEEEEEEEEEEEEEEEEEE";
+echo "  $cyn   P::::P                I::::I    N::::::N    N::::::::::N       D::::::D     D::::::D        L:::::L                                       ";
+echo "  $cyn   P::::P                I::::I    N::::::N     N:::::::::N      D::::::D       D::::::D       L:::::L        LLLLLLL                        ";
+echo "  $cyn PP::::::PP            II::::::II  N::::::N      N::::::::N     D::::::DDDDDDDDDDD::::::D    LL:::::::LLLLLLLLL:::::L  EEEEEEEEEEEEEEEEEEEEEE";
+echo "  $mag P::::::::P            I::::::::I  N::::::N       N:::::::N    D:::::::::::::::::::::::::D   L::::::::::::::::::::::L  E::::::::::::::::::::E";
+echo "  $mag P::::::::P            I::::::::I  N::::::N        N::::::N   D:::::::::::::::::::::::::::D  L::::::::::::::::::::::L  E::::::::::::::::::::E";
+echo "  $mag PPPPPPPPPP            IIIIIIIIII  NNNNNNNN         NNNNNNN  DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD LLLLLLLLLLLLLLLLLLLLLLLL  EEEEEEEEEEEEEEEEEEEEEE";
+echo "$white                                                                                                                                       ";
+
+
+
+
+

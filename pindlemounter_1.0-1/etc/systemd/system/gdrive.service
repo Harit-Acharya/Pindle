@@ -1,0 +1,14 @@
+[Unit]
+Description=Google Drive File System
+Wants=network-online.target
+After=network-online.target
+BindsTo=network-online.target
+
+[Service]
+RemainAfterExit=yes
+ExecStart=/etc/Pindle/GDrive/gdrivefs.sh start
+ExecStop=/etc/Pindle/GDrive/ugdrivefs.sh start
+ExecReload=/etc/Pindle/GDrive/gdrivefs.sh start
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+Source: pindlemounter
+Version: 1.0-1
+Section: python
+Priority: optional
+Maintainer: Pindle Team <PARTHG0R@protonmail.com>
+Depends: python3 (>=3.6),
+		 python3-requests,
+		 python3-oauthlib,
+		 python3-google-auth,
+		 python3-google-auth-httplib2,
+		 python3-httplib2,
+		 python3-oauth2client,
+		 python3-six,
+		 python3-uritemplate,
+         python3-onedrivesdk,
+		 python3-protobuf,
+		 python3-pyqt5,
+		 python3-watchdog,
+		 python3-fuse,
+		 python3-fusepy
+Package: pindlemounter
+Architecture: amd64
+Description: Mount Cloud Storages Locally
+ With Multiple Accounts At One Place
