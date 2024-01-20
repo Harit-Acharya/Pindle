@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .logo {
+    color: #094b65;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094b65;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #93c8e8, transparent);
+    z-index: 10;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #text {
+    position: absolute;
+    color: #094b65;
+    font-size: 0;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Poppins', sans-serif;
+}
+
+section #text span {
+    font-size: 10vw;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Rancho', cursive;
+}
+
+.sec {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #93c8e8;
+}
+
+.sec h2 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 0px;
+    background: -webkit-linear-gradient(120deg, rgb(37, 158, 233), rgb(23, 60, 245), rgb(14, 19, 118));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec p {
+    font-size: 1.5em;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.sec p1 {
+    padding-left: 8px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec p2 {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec p3 {
+    padding-left: 50px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.sec p4 {
+    padding-left: 110px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.column {
+    position: relative;
+    float: left;
+    width: 55%;
+    padding: 0px;
+    height: 725px;
+    background: #93c8e8;
+}
+
+.column2 {
+    position: relative;
+    float: left;
+    width: 45%;
+    padding-top: 07%;
+    height: 725px;
+    background-color: #93c8e8;
+}
+
+#imac_blue {
+    width: 45%;
+    height: 725px;
+    position: relative;
+}
+
+#imac_blue:after {
+    content: '';
+    display: block;
+    background: url('imac_yellow.png') no-repeat top left transparent;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+#imac_blue video {
+    position: absolute;
+    top: 20px;
+    left: -510px;
+    z-index: 10000;
+}
+
+.row:after {
+    content: "";
+    display: flex;
+    clear: both;
+    background-color: #93c8e8;
+}
+
+
+/*--*/
+
+.sec2 {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #429acc;
+}
+
+.sec2 h2 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(120deg, rgb(37, 158, 233), rgb(23, 60, 245), rgb(14, 19, 118));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec2 p {
+    font-size: 1.5em;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.sec2 p1 {
+    padding-left: 30px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 p2 {
+    padding-top: 30px;
+    padding-left: 180px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 p3 {
+    padding-left: 0px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.sec2 p4 {
+    padding-left: 170px;
+    padding-right: 215px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.column3 {
+    position: relative;
+    float: right;
+    width: 55%;
+    height: 700px;
+    background: #429acc;
+}
+
+.column4 {
+    position: relative;
+    float: left;
+    width: 45%;
+    padding: 100px;
+    padding-top: 08%;
+    height: 700px;
+    background: #429acc;
+}
+
+#imac_yellow {
+    width: 45%;
+    height: 700px;
+    position: relative;
+}
+
+#imac_yellow:after {
+    content: '';
+    display: block;
+    background: url('imac_pink.png') no-repeat top left transparent;
+    width: 100%;
+    height: 100%;
+    left: 50px;
+    top: 5px;
+    position: absolute;
+    z-index: 10;
+}
+
+#imac_yellow video {
+    position: absolute;
+    top: 23px;
+    left: -472px;
+    z-index: 10000;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sec3 {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #003b73;
+}
+
+.sec3 h2 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(120deg, rgb(23, 60, 245), rgb(37, 158, 233), rgb(8, 229, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec3 p {
+    font-size: 1.5em;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.sec3 p1 {
+    padding-left: 45px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3 p2 {
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3 p3 {
+    padding-left: 0px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.sec3 p4 {
+    padding-left: 105px;
+    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2em;
+}
+
+.column5 {
+    position: relative;
+    float: left;
+    width: 55%;
+    padding: 0px;
+    height: 750px;
+    background: #003b73;
+}
+
+.column6 {
+    position: relative;
+    float: right;
+    width: 45%;
+    padding-top: 07%;
+    height: 750px;
+    background: #003b73;
+}
+
+#imac_pink {
+    width: 45%;
+    height: 750px;
+    position: relative;
+}
+
+#imac_pink:after {
+    content: '';
+    display: block;
+    background: url('imac_blue.png') no-repeat top left transparent;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 3px;
+    position: absolute;
+    z-index: 10;
+}
+
+#imac_pink video {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+    object-fit: fill;
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* credits-about-info */
+
+.column_info p {
+    padding-top: 6px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.column_info p1 {
+    padding-top: 10px;
+    font-size: 2.0em;
+    color: #fff;
+    background: -webkit-linear-gradient(110deg, rgb(245, 23, 115), rgb(233, 37, 181), rgb(8, 229, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+
+.column_info p2 {
+    padding-top: 50px;
+    font-size: 2.0em;
+    color: #fff;
+    background: -webkit-linear-gradient(100deg, rgb(219, 23, 245), rgb(37, 109, 233), rgb(8, 229, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.column_info p3 {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column_info p5 {
+    padding-left: 580px;
+    padding-right: 580px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column_info p4 {
+    padding-top: 100px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.column_info p6 {
+    padding-top: 40px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.column_info {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 812px;
+    background-color: #000;
+    background-image: url('stars.png');
+}
+
+.row_info:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* end cred */
+
+#center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00192a;
+}
+
+#center tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center tr td {
+    list-style: none;
+    margin-left: 20px;
+    column-width: 150px;
+    padding: 30px;
+}
+
+#center tr td a {
+    text-decoration: none;
+    font-style: italic;
+    font-style: bold;
+    padding: 10px 20px;
+    color: #094b65;
+    border-radius: 20px;
+}
+
+#center tr td a.active {
+    background: #094b65;
+    color: #f0ece4;
+}
+
+#center tr td a:hover {
+    background: #ac262c;
+    color: #fff;
+}
+
+.downloads {
+    background-color: #00192a;
+}
+
+.downloads h1 {
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wave4.png);
+    background-size: 1000px 100px;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+
+.wave1#wave5 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave1#wave6 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave1#wave7 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave1#wave8 {
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wave2.png);
+    background-size: 1000px 100px;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+
+.wave2#wave9 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave2#wave10 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave2#wave11 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave2#wave12 {
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.second {
+    background-color: #93c8e8;
+    width: 100%;
+    height: 100px;
+}
+
+.third {
+    background-color: #429acc;
+    width: 100%;
+    height: 100px;
+}
+
+.fourth {
+    background-color: #003b73;
+    width: 100%;
+    height: 100px;
+}
+
+.sort {
+    position: absolute;
+    top: calc(22% - 100px);
+    left: calc(85% - 290px);
+    height: 140px;
+    width: 140px;
+}
