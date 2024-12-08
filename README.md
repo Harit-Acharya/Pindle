@@ -1,32 +1,50 @@
-# Pindle Project
+# PINDLE: FUSE-based Filesystem and Folder Syncer
 
-Welcome to the Pindle Project repository!
-
-The Pindle Project is a web-based platform designed to help visualize and interact with hierarchical project plans. This platform aims to enhance project management by providing an intuitive interface for organizing tasks and tracking progress.
+PINDLE is a hybrid file management solution designed to enhance productivity in today's cloud-driven and hybrid work environments. By leveraging FUSE (Filesystem in Userspace), PINDLE integrates multiple cloud storage accounts into a seamless user experience and enables automated syncing between devices.
 
 ## Features
 
-- **Hierarchical Task Management**: Organize tasks into nested hierarchies to reflect project structure.
-- **Visual Timeline**: Easily visualize the timeline and progress of tasks.
-- **Interactive Interface**: Drag-and-drop functionality for rearranging tasks and updating progress.
-- **Real-Time Collaboration**: Collaborate with team members in real-time.
-- **Customizable Views**: Filter and sort tasks based on various criteria.
+- **Cloud Mounter**:
+  - Supports mounting Google Drive and OneDrive as local file systems.
+  - Easy-to-use GUI for mounting and managing cloud accounts.
+  - Automates OAuth authentication and manages tokens for seamless access.
+  - Handles file operations such as reading, writing, creating, and deleting directly within the mounted filesystem.
 
-## Getting Started
+- **Folder Syncer**:
+  - Sync folders between devices via cloud storage.
+  - GUI-based configuration for mapping folders and managing sync settings.
+  - Automated handling of offline-to-online transitions with local caching and conflict resolution.
 
-### Prerequisites
+## Technologies Used
 
-Ensure you have the following installed:
+- **FUSE**: For creating user-space filesystems.
+- **Python**: Backend implementation and API integration.
+- **Cloud APIs**: Google Drive and OneDrive APIs for cloud interactions.
+- **Graphical User Interface**: Simplified user interaction for non-technical users.
 
-- [Node.js](https://nodejs.org/) (version X.X.X)
-- [npm](https://www.npmjs.com/) (version X.X.X)
+## Installation
 
-### Installation
+1. Visit the [PINDLE website](https://pindleproject.github.io/pindle.tech/) to download the latest installer for your operating system.
+2. Run the installer:
+   - **Windows**: Download and run the `.exe` file, then follow the setup wizard.
+   - **Linux**: Download the `.deb` or `.rpm` file and install it using your package manager:
+     ```bash
+     sudo dpkg -i pindle.deb
+     ```
+     or
+     ```bash
+     sudo rpm -i pindle.rpm
+     ```
 
-1. Clone the repository:
-
-   ```sh
-   git clone https://github.com/yourusername/pindle-project.git
-   cd pindle-project
+@article{pindle2021,
+  title={PINDLE: FUSE-based Filesystem and Folder Syncer},
+  author={Parth Gor, Rayson D'sa, Harit Acharya, Mrs. Geetha S.},
+  journal={International Journal of Scientific Research in Computer Science, Engineering and Information Technology},
+  volume={7},
+  issue={4},
+  pages={561--566},
+  year={2021},
+  doi={10.32628/CSEIT2174128}
+}
 
 More info @ https://pindleproject.github.io/pindle.tech/
