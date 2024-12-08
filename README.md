@@ -1,5 +1,7 @@
 # PINDLE: FUSE-based Filesystem and Folder Syncer
-![|50](pindle.tech_hosted/mainicon.png)
+<p align="center">
+    <img src="" alt="Description" width="300">
+</p>
 
 PINDLE is a hybrid file management solution designed to enhance productivity in today's cloud-driven and hybrid work environments. By leveraging FUSE (Filesystem in Userspace), PINDLE integrates multiple cloud storage accounts into a seamless user experience and enables automated syncing between devices.
 
