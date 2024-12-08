@@ -29,22 +29,11 @@ PINDLE is a hybrid file management solution designed to enhance productivity in 
    - **Windows**: Download and run the `.exe` file, then follow the setup wizard.
    - **Linux**: Download the `.deb` or `.rpm` file and install it using your package manager:
      ```bash
-     sudo dpkg -i pindle.deb
+     sudo dpkg -i [package-name].deb
      ```
      or
      ```bash
-     sudo rpm -i pindle.rpm
+     sudo rpm -i [package-name].rpm
      ```
 
-@article{pindle2021,
-  title={PINDLE: FUSE-based Filesystem and Folder Syncer},
-  author={Parth Gor, Rayson D'sa, Harit Acharya, Mrs. Geetha S.},
-  journal={International Journal of Scientific Research in Computer Science, Engineering and Information Technology},
-  volume={7},
-  issue={4},
-  pages={561--566},
-  year={2021},
-  doi={10.32628/CSEIT2174128}
-}
-
-More info @ https://pindleproject.github.io/pindle.tech/
+For more details, refer to the [published paper](https://doi.org/10.32628/CSEIT2174128).
