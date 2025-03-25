@@ -1,42 +1,67 @@
-# PINDLE: FUSE-based Filesystem and Folder Syncer
-<p align="center">
-    <img src="pindle.tech_hosted/mainicon.png" alt="Description" width="300">
-</p>
-
-PINDLE is a hybrid file management solution designed to enhance productivity in today's cloud-driven and hybrid work environments. By leveraging FUSE (Filesystem in Userspace), PINDLE integrates multiple cloud storage accounts into a seamless user experience and enables automated syncing between devices.
-
-## Features
-
-- **Cloud Mounter**:
-  - Supports mounting Google Drive and OneDrive as local file systems.
-  - Easy-to-use GUI for mounting and managing cloud accounts.
-  - Automates OAuth authentication and manages tokens for seamless access.
-  - Handles file operations such as reading, writing, creating, and deleting directly within the mounted filesystem.
-
-- **Folder Syncer**:
-  - Sync folders between devices via cloud storage.
-  - GUI-based configuration for mapping folders and managing sync settings.
-  - Automated handling of offline-to-online transitions with local caching and conflict resolution.
-
-## Technologies Used
-
-- **FUSE**: For creating user-space filesystems.
-- **Python**: Backend implementation and API integration.
-- **Cloud APIs**: Google Drive and OneDrive APIs for cloud interactions.
-- **Graphical User Interface**: Simplified user interaction for non-technical users.
-
-## Installation
-
-1. Visit the [PINDLE website](https://pindleproject.github.io/pindle.tech/) to download the latest installer for your operating system.
-2. Run the installer:
-   - **Windows**: Download and run the `.exe` file, then follow the setup wizard.
-   - **Linux**: Download the `.deb` or `.rpm` file and install it using your package manager:
-     ```bash
-     sudo dpkg -i [package-name].deb
-     ```
-     or
-     ```bash
-     sudo rpm -i [package-name].rpm
-     ```
-
-For more details, refer to the [published paper](https://doi.org/10.32628/CSEIT2174128).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PINDLE Dynamic Readme</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .button-row button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .content-area {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      min-height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PINDLE Dynamic Readme</h1>
+  <div class="button-row">
+    <button onclick="showContent('categorizer')">Categorizer</button>
+    <button onclick="showContent('mounter')">Mounter</button>
+    <button onclick="showContent('syncer')">Syncer</button>
+  </div>
+  <div class="content-area" id="contentArea">
+    <p>Select a button above to see more information.</p>
+  </div>
+  <script>
+    function showContent(type) {
+      let content = '';
+      if (type === 'categorizer') {
+        content = `
+          <h2>Categorizer</h2>
+          <p>This section provides a brief description of the categorizer functionality. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <img src="https://via.placeholder.com/300x150?text=Categorizer" alt="Categorizer Image">
+        `;
+      } else if (type === 'mounter') {
+        content = `
+          <h2>Mounter</h2>
+          <p>This section details the mounter capabilities. Aliquam tincidunt mauris eu risus varius, et pharetra justo cursus.</p>
+          <img src="https://via.placeholder.com/300x150?text=Mounter" alt="Mounter Image">
+        `;
+      } else if (type === 'syncer') {
+        content = `
+          <h2>Syncer</h2>
+          <p>This section describes the syncer component. Quisque consequat sapien ut leo cursus rhoncus, nullam dui mi, vulputate ac metus.</p>
+          <img src="https://via.placeholder.com/300x150?text=Syncer" alt="Syncer Image">
+        `;
+      }
+      document.getElementById('contentArea').innerHTML = content;
+    }
+  </script>
+</body>
+</html>
